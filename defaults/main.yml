@@ -1,7 +1,7 @@
 ---
 # defaults file for linux packages 
 
-ubuntu_packages:
+debian_packages:
      - vim
      - git
      - curl
