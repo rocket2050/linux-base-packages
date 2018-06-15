@@ -1,0 +1,17 @@
+---
+# tasks file for Git
+#
+ - name: system packages | cli user utils in Ubuntu 16 && Ubuntu 14
+   become: yes
+   apt:
+     name: "{{ item }}"
+     state: present 
+   with_items: "{{ ubuntu_packages }}"
+   when: ansible_os_family ==  'Debian'
+
+ - name: system packages | cli user utils in Centos all versions
+   yum:
+     name: "{{ item }}"
+     state: present
+   with_items: "{{ redhat_packages }}"
+   when: ansible_os_family == 'RedHat'

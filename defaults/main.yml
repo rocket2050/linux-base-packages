@@ -1,0 +1,22 @@
+---
+# defaults file for linux packages 
+
+ubuntu_packages:
+     - vim
+     - git
+     - curl
+     - wget
+     - net-tools
+     - openssh-server
+     - openssh-client
+
+
+redhat_packages:
+     - vim
+     - git
+     - curl
+     - wget
+     - net-tools
+     - openssh-server
+     - openssh-clients
+
