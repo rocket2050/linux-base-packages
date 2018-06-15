@@ -15,7 +15,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - {'role-name'}
+         - role-name
 
 How to use Playbook
 -------------------
