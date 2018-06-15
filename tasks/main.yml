@@ -9,7 +9,7 @@
    with_items: "{{ debian_packages }}"
    when: ansible_os_family ==  'Debian'
 
- - name: system packages | cli user utils in Debian
+ - name: system packages | cli user utils in Redhat
    yum:
      name: "{{ item }}"
      state: present
